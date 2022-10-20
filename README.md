@@ -22,11 +22,11 @@ _Create workflows that enable you to use Continuous Integration (CI) for your pr
 
 [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
 
-- **Who is this for**: Developers, DevOps Engineers, new GitHub users, students, teams.
-- **What you'll learn**: What continuous integration is, how to use GitHub Actions for CI, how to create a workflow that runs tests and produces test reports.
-- **What you'll build**: We'll use [remark-lint](https://github.com/remarkjs/remark-lint) to check the consistency of Markdown files.
-- **Prerequisites**: We assume you've completed [Hello GitHub Actions](https://github.com/skills/hello-github-actions) first.
-- **How long**: This course is five steps long and takes less than two hours to complete.
+- __Who is this for__: Developers, DevOps Engineers, new GitHub users, students, teams.
+- __What you'll learn__: What continuous integration is, how to use GitHub Actions for CI, how to create a workflow that runs tests and produces test reports.
+- __What you'll build__: We'll use [remark-lint](https://github.com/remarkjs/remark-lint) to check the consistency of Markdown files.
+- __Prerequisites__: We assume you've completed [Hello GitHub Actions](https://github.com/skills/hello-github-actions) first.
+- __How long__: This course is five steps long and takes less than two hours to complete.
 
 ## How to start this course
 
@@ -53,14 +53,14 @@ endstep0-->
 
 _Welcome to "GitHub Actions: Continuous Integration"! :wave:_
 
-**What is _continuous integration_?**: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
+__What is _continuous integration_?__: [Continuous integration](https://en.wikipedia.org/wiki/Continuous_integration) can help you stick to your team’s quality standards by running tests and reporting the results on GitHub. CI tools run builds and tests, triggered by commits. The results post back to GitHub in the pull request. The goal is fewer issues in `main` and faster feedback as you work.
 
 ![An illustration split in two. On the left: illustration of how GitHub Actions terms are encapsulated. At the highest level: workflows and event triggers. Inside of workflows: jobs and definition of the build environment. Inside jobs: steps. Inside steps: a call to an action. On the right: the sequence: workflows, job, step, action.](https://user-images.githubusercontent.com/6351798/88589835-f5ce0900-d016-11ea-8c8a-0e7d7907c713.png)
 
 - **Workflow**: A workflow is a unit of automation from start to finish, including the definition of what triggers the automation, what environment or other aspects should be taken account during the automation, and what should happen as a result of the trigger.
 - **Job**: A job is a section of the workflow, and is made up of one or more steps. In this section of our workflow, the template defines the steps that make up the `build` job.
-- **Step**: A step represents one _effect_ of the automation. A step could be defined as a GitHub Action, or another unit, like printing something to the console.
-- **Action**: An action is a piece of automation written in a way that is compatible with workflows. Actions can be written by GitHub, by the open source community, or you can write them yourself!
+- __Step__: A step represents one _effect_ of the automation. A step could be defined as a GitHub Action, or another unit, like printing something to the console.
+- __Action__: An action is a piece of automation written in a way that is compatible with workflows. Actions can be written by GitHub, by the open source community, or you can write them yourself!
 
 To learn more, check out "[Workflow syntax for GitHub Actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions)" in the GitHub Docs.
 
@@ -128,7 +128,7 @@ If the checks don't appear or if the checks are stuck in progress, there's a few
    ```markdown
    _underscore_
    ```
-1. **Commit changes**.
+1. __Commit changes__.
 1. Wait about 20 seconds then refresh this page for the next step.
 
 </details>
@@ -192,13 +192,13 @@ Protected branches ensure that collaborators on your repository cannot make irre
 
 ### :keyboard: Activity: Add branch protections
 
-1. Go to **Branches** settings. You can navigate to that page manually by clicking on the right-most tab in the top of the repository called **Settings** and then clicking on **Branches**.
-1. Click on **Add rule** under "Branch protection rules".
-1. Type `main` in **Branch name pattern**.
-1. Check **Require pull request reviews before merging**.
-1. Check **Require status checks to pass before merging**.
+1. Go to __Branches__ settings. You can navigate to that page manually by clicking on the right-most tab in the top of the repository called __Settings__ and then clicking on __Branches__.
+1. Click on __Add rule__ under "Branch protection rules".
+1. Type `main` in __Branch name pattern__.
+1. Check __Require pull request reviews before merging__.
+1. Check __Require status checks to pass before merging__.
 1. Check all build and test jobs that you'd like to see in the newly visible gray box.
-1. Click **Create**.
+1. Click __Create__.
 1. _Once you turn on branch protection, Actions can no longer push directly to `main`. You'll need to open the next step on your own._
 
 <!-- Wait about 20 seconds then refresh this page for the next step. -->
@@ -220,7 +220,7 @@ You can now [merge](https://docs.github.com/en/get-started/quickstart/github-glo
 
 ### :keyboard: Activity: Merge your pull request
 
-1. Click **Merge pull request**.
+1. Click __Merge pull request__.
 1. Delete the branch `ci` (optional).
 1. _Once you turn on branch protection, Actions can no longer push directly to `main`. You'll need to open the "finish" on your own._
 
